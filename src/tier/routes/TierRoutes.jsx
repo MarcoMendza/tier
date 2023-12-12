@@ -4,7 +4,7 @@ import {DeliveryPage} from "../delivery/page/DeliveryPage.jsx";
 import {InvestmentsPage} from "../investments/page/InvestmentsPage.jsx";
 import {OrdersPage} from "../orders/page/OrdersPage.jsx";
 import {ProfitsPage} from "../profits/page/ProfitsPage.jsx";
-import {SalesPage} from "../sales/page/SalesPage.jsx";
+import CustomersPage from "../customer/page/CustomerPage.jsx";
 
 
 export const TierRoutes = () => {
@@ -15,7 +15,7 @@ export const TierRoutes = () => {
             <Route path="/investments" element={ <InvestmentsPage/>}/>
             <Route path="/orders" element={ <OrdersPage/>}/>
             <Route path="/profits" element={ <ProfitsPage/>}/>
-            <Route path="/sales" element={ <SalesPage/>}/>
+            <Route path="/customers" element={ <CustomersPage/>}/>
             <Route path="/*" element={ <Navigate to="/"/>} />
         </Routes>
     )

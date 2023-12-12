@@ -3,9 +3,7 @@ import { useSelector } from "react-redux";
 import { Link } from 'react-router-dom';
 import InventoryIcon from '@mui/icons-material/Inventory';
 import LocalShippingIcon from '@mui/icons-material/LocalShipping';
-import AccountBalanceIcon from '@mui/icons-material/AccountBalance';
 import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
-import AttachMoneyIcon from '@mui/icons-material/AttachMoney';
 import StoreIcon from '@mui/icons-material/Store';
 
 export const SideBar = ({ drawerWidth = 240, toggleDrawer, isDrawerOpen, isDesktop }) => {
@@ -14,10 +12,8 @@ export const SideBar = ({ drawerWidth = 240, toggleDrawer, isDrawerOpen, isDeskt
     const menuItems = [
         { text: 'Inventario', path: '/', icon: <InventoryIcon /> },
         { text: 'Entregas', path: '/delivery', icon: <LocalShippingIcon /> },
-        { text: 'Inversiones', path: '/investments', icon: <AccountBalanceIcon /> },
         { text: 'Ordenes', path: '/orders', icon: <ShoppingCartIcon /> },
-        { text: 'Ganancias', path: '/profits', icon: <AttachMoneyIcon /> },
-        { text: 'Ventas', path: '/sales', icon: <StoreIcon /> },
+        { text: 'Clientes', path: '/customers', icon: <StoreIcon /> },
     ];
 
     return (
